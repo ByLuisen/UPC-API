@@ -20,7 +20,7 @@ class UserController extends Controller
      */
     public function list()
     {
-        $rankings = User::all()->sortByDesc('partidas_ganadas');
+        $rankings = User::role('user')->get()->sortByDesc('partidas_ganadas');
         return ApiResponse::success(UserResource::collection($rankings));
 
         // return response()->json([
