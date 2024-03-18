@@ -109,7 +109,7 @@ class EventoController extends Controller
         // Verifica si la validación falla
         if ($validator->fails()) {
             // Retorna una respuesta JSON con los errores de validación
-            return ApiResponse::validationError($validator->errors()->first());
+            return ApiResponse::validationError($validator->errors());
         }
 
         try {
@@ -180,7 +180,7 @@ class EventoController extends Controller
         // Verifica si la validación falla
         if ($validator->fails()) {
             // Retorna una respuesta JSON con los errores de validación
-            return ApiResponse::validationError($validator->errors()->first());
+            return ApiResponse::validationError($validator->errors());
         }
 
         try {

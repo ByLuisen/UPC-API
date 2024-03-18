@@ -37,7 +37,7 @@ class AuthController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return ApiResponse::validationError($validator->errors()->first());
+            return ApiResponse::validationError($validator->errors());
         }
 
         $credentials = $request->only('email', 'password');

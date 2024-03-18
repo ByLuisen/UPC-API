@@ -77,7 +77,7 @@ class MemberController extends Controller
             ]);
 
             if ($validator->fails()) {
-                return ApiResponse::validationError($validator->errors()->first());
+                return ApiResponse::validationError($validator->errors());
             }
 
             // Se actualiza el miembro con la información proporcionada en la solicitud.
