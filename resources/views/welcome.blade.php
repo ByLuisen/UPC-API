@@ -1,4 +1,4 @@
-<!doctype html>
+{{-- <!doctype html>
 <html lang="en" data-critters-container>
 
 <head>
@@ -200,4 +200,4 @@
     <script src="main.c72a2debadb0e773.js" type="module"></script>
 </body>
 
-</html>
+</html> --}}
